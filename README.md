@@ -98,7 +98,7 @@
 ### ```/cats/reserve/:id (put)```
 Вызывает метод ```setReservationMeanToCat(id: number, mean: boolean)```. Данный метод принимает id нужного котика и булевое значение и изменяет его значение регистрации на заданное.
  
-### ```/cats/гтreserve/:id (put)```
+### ```/cats/unreserve/:id (put)```
 Вызывает метод ```setReservationMeanToCat(id: number, mean: boolean)```. Данный метод принимает id нужного котика и булевое значение и изменяет его значение регистрации на заданное.
  
 ### ```/cats/update/:id (put)```
