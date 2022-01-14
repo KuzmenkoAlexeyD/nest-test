@@ -58,14 +58,14 @@ export class CatsController {
 
     @ApiOperation({summary: 'Получить информацию о всех забронированных котиках'})
     @ApiResponse({status: 200, type: [Cat]})
-    @Get('/get/reserved')
+    @Get('/reserved')
     async getAllReservedCat(){
         return await this.catsService.getCatByReserveMean(true);
     }
 
     @ApiOperation({summary: 'Получить информацию о всех свободных котиках'})
     @ApiResponse({status: 200, type: [Cat]})
-    @Get('/get/unreserved')
+    @Get('/unreserved')
     async getAllUnreservedCat(){
         return await this.catsService.getCatByReserveMean(false);
     }
